@@ -1,3 +1,5 @@
-.container-fluid{
-    background-color: blueviolet;
+body{
+    background-image: url(/assets/africa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
