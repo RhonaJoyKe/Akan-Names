@@ -2,4 +2,27 @@ body{
     background-image: url(/assets/africa.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 22px;
+}
+.navbar-nav{
+   margin-left: 900px;
+   
+}
+.navbar-nav>li{
+    padding-left: 50px;
+    border-radius: 10px;
+    background-color: darkslategrey;
+    width:100px;
+    height: 40px;
+    margin:20px;
+    color: wheat;
+}
+.container{
+    display: flex;
+}
+.text>p{
+    font-size: 22px;
+}
+.form{
+    margin-left: 400px;
 }
