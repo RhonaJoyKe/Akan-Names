@@ -38,10 +38,10 @@ document.getElementById("buu").addEventListener(("click"), function () {
  var gender = document.getElementsByName("gender");
   var dateFinal = new Date(date)
   if (document.getElementById("male").checked) {
-      alert("I am  a male");
-      var weekDay = dateFinal.toLocaleDateString("EN-US", { weekday: 'long' })
-      alert(maleNames[weekDay])
-     
+    alert("I am  a male");
+    var weekDay = dateFinal.toLocaleDateString("EN-US", { weekday: 'long' })
+    alert(maleNames[weekDay])
+   
 }
         
 
