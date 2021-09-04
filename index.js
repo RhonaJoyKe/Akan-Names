@@ -1,4 +1,4 @@
-const maleNames = [{
+const maleNames = {
     Sunday: "Kwasi",
 
     Monday: "Kwadwo",
@@ -13,8 +13,9 @@ const maleNames = [{
 
     Saturday: "Kwame"
 }
-]
-const femaleNames = [{
+
+
+const femaleNames = {
     Sunday: "Akosua",
 
     Monday: "Adwoa",
@@ -29,21 +30,23 @@ const femaleNames = [{
 
     Saturday: "Ama"
 }
-]
+
 
 
 document.getElementById("buu").addEventListener(("click"), function () {
-    var date = document.querySelector("#DOB").value;
-    var gender = document.getElementsByName("gender");
-    var dateFinal = new Date(date)
-    if (document.getElementById("male").checked) {
-        alert("I am  a male");
-        var weekDay = dateFinal.toLocaleDateString("EN-US", { weekday: 'long' })
-        if (weekDay ==) {
+   var date = document.querySelector("#DOB").value;
+ var gender = document.getElementsByName("gender");
+  var dateFinal = new Date(date)
+  if (document.getElementById("male").checked) {
+      alert("I am  a male");
+      var weekDay = dateFinal.toLocaleDateString("EN-US", { weekday: 'long' })
+      alert(maleNames[weekDay])
+     
+}
+        
 
-        }
-        if (document.getElementById("female").checked) {
-            alert("I am  a female");
-        }
+       
+if (document.getElementById("female").checked) {
+    alert("I am  a female");       }
 
-    })
+})
