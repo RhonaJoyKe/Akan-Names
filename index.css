@@ -10,10 +10,52 @@ body{
 }
 .headercontainer{
 width:1000px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .text1{
     font-size: 20px;
     animation: text 3s 1;
+    font-weight: 800;
+}
+@keyframes text {
+    0%{
+        color:olive;
+        margin-bottom: -20px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -20px;
+    }
+    85%{
+        letter-spacing: 15px;
+        margin-bottom: -20px;
+    }
+    
+}
+.text2{
+    font-size: 20px;
+    animation: text 3s 1;
+    font-weight: 800;
+}
+@keyframes text {
+    0%{
+        color:olive;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 15px;
+        margin-bottom: -40px;
+    }
+    
+}
+.text3{
+    font-size: 20px;
+    animation: text 3s 1;
+    font-weight: 800;
 }
 @keyframes text {
     0%{
