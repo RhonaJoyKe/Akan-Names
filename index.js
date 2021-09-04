@@ -43,6 +43,12 @@ document.getElementById("buu").addEventListener(("click"), function () {
     alert(maleNames[weekDay])
    
 }
+else if(document.getElementById("male").checked && document.getElementById("male").checked){
+
+}
+else{
+    alert("You need to Enter your gender" )
+}
         
 
        
