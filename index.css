@@ -4,18 +4,52 @@ body{
     background-size: cover;
     font-size: 22px;
 }
+.header{
+    display: flex;
+
+}
+.headercontainer{
+width:1000px;
+}
+.text1{
+    font-size: 20px;
+    animation: text 3s 1;
+}
+@keyframes text {
+    0%{
+        color:olive;
+        margin-bottom: -20px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -20px;
+    }
+    85%{
+        letter-spacing: 15px;
+        margin-bottom: -20px;
+    }
+    
+}
+.headercontainerspan{
+    text-transform: uppercase;
+}
+.navbar{
+    width:1000px;
+}
 .navbar-nav{
-   margin-left: 900px;
+   margin-left: 400px;
    
 }
 .navbar-nav>li{
-    padding-left: 50px;
+    
     border-radius: 10px;
     background-color: darkslategrey;
-    width:100px;
-    height: 40px;
+    width:120px;
+    height: 45px;
     margin:20px;
     color: wheat;
+    text-align: center;
+    font-size: 20px;
 }
 .container{
     display: flex;
