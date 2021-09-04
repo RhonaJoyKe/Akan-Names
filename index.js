@@ -36,21 +36,25 @@ const femaleNames = {
 document.getElementById("buu").addEventListener(("click"), function () {
    var date = document.querySelector("#DOB").value;
  var gender = document.getElementsByName("gender");
-  var dateFinal = new Date(date)
+  var dateFinal = new Date(date);
+  function validity(){
+      
+  }
   if (document.getElementById("male").checked) {
-    alert("I am  a male");
+   // alert("I am  a male");
     var weekDay = dateFinal.toLocaleDateString("EN-US", { weekday: 'long' })
-    alert(maleNames[weekDay])
-   
-}
-else if(document.getElementById("male").checked && document.getElementById("male").checked){
+    alert(document.getElementById("jina").innerHTML + "Akan Name is :"+ maleNames[weekDay])
+  }
 
-}
-else{
-    alert("You need to Enter your gender" )
-}
+//  else if(dateFinal.length === 0 ){
+//     alert("You need to Enter your Date of Birth")
+
+// }
+// else{
+//     alert("You need to Enter your gender" )
+// }
         
-
+  
        
 if (document.getElementById("female").checked) {
     alert("I am  a female");       }
