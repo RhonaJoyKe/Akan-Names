@@ -44,6 +44,11 @@ function validateData(){
   let dob = document.getElementById("dob").value;
 // Get list of gender radio buttons
 let radiosGender = document.getElementsByName("gender");
+// Cascade if checks
+if (username) {
+  // If name is filled
+  // alert("Name is filled");
+  console.log("Name is filled");
 
 
 
