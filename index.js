@@ -39,6 +39,10 @@ document.getElementById("submit").addEventListener(("click"), function () {
   // validateDataWithLoop();
 
 })
+function validateData(){
+  let username = document.getElementById("name").value;
+  let dob = document.getElementById("dob").value;
+
 
 
 // // document.getElementById("buu").addEventListener(("click"), function () {
