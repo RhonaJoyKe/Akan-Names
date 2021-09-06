@@ -82,6 +82,14 @@ function validateData() {
     alert("Please enter your name");
   }
 }
+function showOutput(){
+  let username = document.getElementById("name").value;
+  let dob = document.getElementById("dob").value;
+
+  let actualDate = new Date(dob);
+
+  let weekDay = actualDate.toLocaleDateString("EN-US", { weekday: 'long' });
+  console.log(weekDay);
 
 
 // // document.getElementById("buu").addEventListener(("click"), function () {
