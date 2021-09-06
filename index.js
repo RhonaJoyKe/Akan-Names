@@ -34,11 +34,15 @@ const femaleNames = {
 
 
 document.getElementById("buu").addEventListener(("click"), function () {
-   var date = document.querySelector("#DOB").value;
+   var date = document.getElementbyId("DOB").value;
  var gender = document.getElementsByName("gender");
   var dateFinal = new Date(date);
   function validity(){
-      
+    var date = document.querySelector("DOB").value;
+    var gender = document.getElementsByName("gender");
+    if(date.length===0 && gender.unchecked){
+        alert("You need to Enter your Date of Birth");
+    }
   }
   if (document.getElementById("male").checked) {
    // alert("I am  a male");
