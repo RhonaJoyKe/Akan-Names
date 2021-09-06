@@ -6,7 +6,7 @@ This is a web page that depending on one's gender and their Date of Birth,gets t
 ## Known Bugs
 None.
 ## Technologies Used
-HTML, CSS,
+HTML, CSS, Javascript
 ## Setup/installation Requirements
 Live link to view the project <a href="https://rhonajoyke.github.io/Portfolio/">View Portfolio website</a>
 ### License
