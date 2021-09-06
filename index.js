@@ -30,37 +30,45 @@ const femaleNames = {
 
     Saturday: "Ama"
 }
+//Problem breakdown
+// Submit > onclicklistner > validate > process
+
+document.getElementById("submit").addEventListener(("click"), function () {
+  validateData();
+
+  // validateDataWithLoop();
+
+})
 
 
+// // document.getElementById("buu").addEventListener(("click"), function () {
+// //    var date = document.getElementbyId("DOB").value;
+// //  var gender = document.getElementsByName("gender");
+// //   var dateFinal = new Date(date);
+// //   function validity(){
+// //     var date = document.querySelector("DOB").value;
+// //     var gender = document.getElementsByName("gender");
+// //     if(date.length===0 && gender.unchecked){
+// //         alert("You need to Enter your Date of Birth");
+// //     }
+// //   }
+// //   if (document.getElementById("male").checked) {
+// //    // alert("I am  a male");
+// //     var weekDay = dateFinal.toLocaleDateString("EN-US", { weekday: 'long' })
+// //     alert(document.getElementById("jina").innerHTML + "Akan Name is :"+ maleNames[weekDay])
+// //   }
 
-document.getElementById("buu").addEventListener(("click"), function () {
-   var date = document.getElementbyId("DOB").value;
- var gender = document.getElementsByName("gender");
-  var dateFinal = new Date(date);
-  function validity(){
-    var date = document.querySelector("DOB").value;
-    var gender = document.getElementsByName("gender");
-    if(date.length===0 && gender.unchecked){
-        alert("You need to Enter your Date of Birth");
-    }
-  }
-  if (document.getElementById("male").checked) {
-   // alert("I am  a male");
-    var weekDay = dateFinal.toLocaleDateString("EN-US", { weekday: 'long' })
-    alert(document.getElementById("jina").innerHTML + "Akan Name is :"+ maleNames[weekDay])
-  }
+// // //  else if(dateFinal.length === 0 ){
+// // //     alert("You need to Enter your Date of Birth")
 
-//  else if(dateFinal.length === 0 ){
-//     alert("You need to Enter your Date of Birth")
-
-// }
-// else{
-//     alert("You need to Enter your gender" )
-// }
+// // // }
+// // // else{
+// // //     alert("You need to Enter your gender" )
+// // // }
         
   
        
-if (document.getElementById("female").checked) {
-    alert("I am  a female");       }
+// // if (document.getElementById("female").checked) {
+// //     alert("I am  a female");       }
 
-})
+// })
