@@ -42,6 +42,8 @@ document.getElementById("submit").addEventListener(("click"), function () {
 function validateData(){
   let username = document.getElementById("name").value;
   let dob = document.getElementById("dob").value;
+// Get list of gender radio buttons
+let radiosGender = document.getElementsByName("gender");
 
 
 
