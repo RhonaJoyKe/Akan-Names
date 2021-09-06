@@ -73,6 +73,15 @@ function validateData() {
         alert("Please select your gender");
 
       }
+    } else {
+      // Dob not filled
+      alert("Please enter your DOB");
+    }
+
+  } else {
+    alert("Please enter your name");
+  }
+}
 
 
 // // document.getElementById("buu").addEventListener(("click"), function () {
