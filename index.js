@@ -62,6 +62,17 @@ function validateData() {
             oneGenderSelected = true;
           }
       }
+      if (oneGenderSelected) {
+        // Do something if at least one gender is selected
+        console.log("A gender is selected");
+
+        // Process the collected data
+        showOutput();
+      } else {
+        // No gender is selected yet
+        alert("Please select your gender");
+
+      }
 
 
 // // document.getElementById("buu").addEventListener(("click"), function () {
