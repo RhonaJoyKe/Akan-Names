@@ -45,7 +45,7 @@ function validateData() {
   // Get list of gender radio buttons
   let radiosGender = document.getElementsByName("gender");
   // Cascade if checks
-   if (username) {
+  if (username) {
     // If name is filled
     // alert("Name is filled");
     console.log("Name is filled");
@@ -57,10 +57,10 @@ function validateData() {
       // Check if gender is filled
       let oneGenderSelected = false;
 
-      for( i = 0; i < radiosGender.length; i++ ) {
-          if(radiosGender[i].checked) {
-            oneGenderSelected = true;
-          }
+      for (i = 0; i < radiosGender.length; i++) {
+        if (radiosGender[i].checked) {
+          oneGenderSelected = true;
+        }
       }
       if (oneGenderSelected) {
         // Do something if at least one gender is selected
@@ -82,7 +82,7 @@ function validateData() {
     alert("Please enter your name");
   }
 }
-function showOutput(){
+function showOutput() {
   let username = document.getElementById("name").value;
   let dob = document.getElementById("dob").value;
 
@@ -91,15 +91,15 @@ function showOutput(){
   let weekDay = actualDate.toLocaleDateString("EN-US", { weekday: 'long' });
   console.log(weekDay);
 
-   if (document.getElementById("male").checked) {
+  if (document.getElementById("male").checked) {
     // alert("Hello " + username + ". Your Akan Name is: " + maleNames[weekDay])
 
     // Alert using string literals
     // To use string literals use back ticks, dollar signs and curly braces
     // eg `Hello ${userName}`
-     alert(`Hello ${username}. Your Akan Name is ${maleNames[weekDay]}`);
-  } 
-   else if (document.getElementById("female").checked) {
+    alert(`Hello ${username}. Your Akan Name is ${maleNames[weekDay]}`);
+  }
+  else if (document.getElementById("female").checked) {
     // alert("Hello " + username + ". Your Akan Name is: " + femaleNames[weekDay])
 
     // Alert using string literals
