@@ -49,7 +49,11 @@ if (username) {
   // If name is filled
   // alert("Name is filled");
   console.log("Name is filled");
-
+// Check if dob is filled
+if (dob) {
+  // If dob is filled, do something
+  // alert("Dob is filled");
+  console.log("Dob is filled");
 
 
 // // document.getElementById("buu").addEventListener(("click"), function () {
