@@ -1,34 +1,34 @@
 const maleNames = {
-    Sunday: "Kwasi",
+  Sunday: "Kwasi",
 
-    Monday: "Kwadwo",
+  Monday: "Kwadwo",
 
-    Tuesday: "Kwabena",
+  Tuesday: "Kwabena",
 
-    Wednesday: "Kwaku",
+  Wednesday: "Kwaku",
 
-    Thursday: "Yaw",
+  Thursday: "Yaw",
 
-    Friday: "Kofi",
+  Friday: "Kofi",
 
-    Saturday: "Kwame"
+  Saturday: "Kwame"
 }
 
 
 const femaleNames = {
-    Sunday: "Akosua",
+  Sunday: "Akosua",
 
-    Monday: "Adwoa",
+  Monday: "Adwoa",
 
-    Tuesday: "Abenaa",
+  Tuesday: "Abenaa",
 
-    Wednesday: "Akua",
+  Wednesday: "Akua",
 
-    Thursday: "Yaa",
+  Thursday: "Yaa",
 
-    Friday: " Afua",
+  Friday: " Afua",
 
-    Saturday: "Ama"
+  Saturday: "Ama"
 }
 //Problem breakdown
 // Submit > onclicklistner > validate > process
@@ -39,21 +39,29 @@ document.getElementById("submit").addEventListener(("click"), function () {
   // validateDataWithLoop();
 
 })
-function validateData(){
+function validateData() {
   let username = document.getElementById("name").value;
   let dob = document.getElementById("dob").value;
-// Get list of gender radio buttons
-let radiosGender = document.getElementsByName("gender");
-// Cascade if checks
-if (username) {
-  // If name is filled
-  // alert("Name is filled");
-  console.log("Name is filled");
-// Check if dob is filled
-if (dob) {
-  // If dob is filled, do something
-  // alert("Dob is filled");
-  console.log("Dob is filled");
+  // Get list of gender radio buttons
+  let radiosGender = document.getElementsByName("gender");
+  // Cascade if checks
+   if (username) {
+    // If name is filled
+    // alert("Name is filled");
+    console.log("Name is filled");
+    // Check if dob is filled
+    if (dob) {
+      // If dob is filled, do something
+      // alert("Dob is filled");
+      console.log("Dob is filled");
+      // Check if gender is filled
+      let oneGenderSelected = false;
+
+      for( i = 0; i < radiosGender.length; i++ ) {
+          if(radiosGender[i].checked) {
+            oneGenderSelected = true;
+          }
+      }
 
 
 // // document.getElementById("buu").addEventListener(("click"), function () {
@@ -80,9 +88,9 @@ if (dob) {
 // // // else{
 // // //     alert("You need to Enter your gender" )
 // // // }
-        
-  
-       
+
+
+
 // // if (document.getElementById("female").checked) {
 // //     alert("I am  a female");       }
 
