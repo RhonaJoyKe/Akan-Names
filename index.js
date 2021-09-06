@@ -91,14 +91,23 @@ function showOutput(){
   let weekDay = actualDate.toLocaleDateString("EN-US", { weekday: 'long' });
   console.log(weekDay);
 
-  if (document.getElementById("male").checked) {
+   if (document.getElementById("male").checked) {
     // alert("Hello " + username + ". Your Akan Name is: " + maleNames[weekDay])
 
     // Alert using string literals
     // To use string literals use back ticks, dollar signs and curly braces
     // eg `Hello ${userName}`
-    alert(`Hello ${username}. Your Akan Name is ${maleNames[weekDay]}`);
+     alert(`Hello ${username}. Your Akan Name is ${maleNames[weekDay]}`);
+  } 
+   else if (document.getElementById("female").checked) {
+    // alert("Hello " + username + ". Your Akan Name is: " + femaleNames[weekDay])
 
+    // Alert using string literals
+    // To use string literals use back ticks, dollar signs and curly braces
+    // eg `Hello ${userName}`
+    alert(`Hello ${username}. Your Akan Name is ${femaleNames[weekDay]}`);
+  }
+}
 
 
 // // document.getElementById("buu").addEventListener(("click"), function () {
