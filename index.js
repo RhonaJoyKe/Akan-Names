@@ -91,6 +91,15 @@ function showOutput(){
   let weekDay = actualDate.toLocaleDateString("EN-US", { weekday: 'long' });
   console.log(weekDay);
 
+  if (document.getElementById("male").checked) {
+    // alert("Hello " + username + ". Your Akan Name is: " + maleNames[weekDay])
+
+    // Alert using string literals
+    // To use string literals use back ticks, dollar signs and curly braces
+    // eg `Hello ${userName}`
+    alert(`Hello ${username}. Your Akan Name is ${maleNames[weekDay]}`);
+
+
 
 // // document.getElementById("buu").addEventListener(("click"), function () {
 // //    var date = document.getElementbyId("DOB").value;
